@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="343.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.obsyeni.HelloController">
+    <children>
+      <AnchorPane prefHeight="349.0" prefWidth="707.0">
+         <children>
+            <ImageView fitHeight="436.0" fitWidth="707.0">
+               <image>
+                  <Image url="C:\Users\ismpr\Desktop\Kisisel\OBS Yeni 1\icon\bg.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="48.0" layoutY="116.0" prefHeight="280.0" prefWidth="611.0">
+               <children>
+                  <Button fx:id="ybs" layoutX="179.0" layoutY="75.0" mnemonicParsing="false" onAction="#yonetimGirisi" prefHeight="74.0" prefWidth="248.0" style="-fx-background-color: white;" />
+                  <Button fx:id="vbs" layoutX="178.0" layoutY="168.0" mnemonicParsing="false" onAction="#veliBilgilendirmeGiris" prefHeight="74.0" prefWidth="241.0" style="-fx-background-color: white;" />
+                  <Text fill="#222121" layoutX="303.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yönetim Bilgi Sistemi Giris" wrappingWidth="107.7669906616211">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <ImageView disable="true" fitHeight="75.0" fitWidth="120.0" layoutX="178.0" layoutY="75.0">
+                     <image>
+                        <Image url="C:\Users\ismpr\Desktop\Kisisel\OBS Yeni 1\icon\ybsİmg.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#222121" layoutX="186.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veli Bilgilendirme Sistemi Giris" wrappingWidth="120.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Text>
+                  <ImageView disable="true" fitHeight="75.0" fitWidth="120.0" layoutX="309.0" layoutY="168.0">
+                     <image>
+                        <Image url="C:\Users\ismpr\Desktop\Kisisel\OBS Yeni 1\icon\vbsİmg.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+    </children>
+</VBox>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="666.0" prefWidth="1055.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.obsyeni.VeliBilgilendirme">
+   <children>
+      <VBox prefHeight="153.0" prefWidth="166.0" style="-fx-background-color: blue;">
+         <children>
+            <ImageView fitHeight="65.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="65.0" top="30.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="C:\Users\ismpr\Desktop\Kisisel\OBS Yeni 1\icon\reading (1).png" />
+               </image>
+            </ImageView>
+            <Text fx:id="userName" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" wrappingWidth="195.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="18.0" />
+               </VBox.margin>
+            </Text>
+            <Text fx:id="role" fill="#fffdfd" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: cENTER;" wrappingWidth="195.13671875">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+      <AnchorPane layoutY="153.0" prefHeight="533.0" prefWidth="200.0" style="-fx-background-color: white;">
+         <children>
+            <VBox layoutX="7.0" layoutY="151.0" prefHeight="123.0" prefWidth="186.0">
+               <children>
+                  <Button fx:id="notBilgisi" mnemonicParsing="false" onAction="#notBilgisi" prefHeight="41.0" prefWidth="186.0" style="-fx-border-color: #ECF0F5; -fx-border-width: 1px;" styleClass="myButton" stylesheets="@stye.css" text="Not Bilgisi" />
+                  <Button fx:id="sınavTarihiButon" mnemonicParsing="false" onAction="#sınavTarihiButon" prefHeight="41.0" prefWidth="186.0" style="-fx-border-color: #ECF0F5; -fx-border-width: 1px;" styleClass="myButton" stylesheets="@stye.css" text="Sınav Tarihleri" />
+                  <Button fx:id="devamsızlıkButon" mnemonicParsing="false" onAction="#devamsızlıkButon" prefHeight="41.0" prefWidth="186.0" style="-fx-border-color: #ECF0F5; -fx-border-width: 1px;" styleClass="myButton" stylesheets="@stye.css" text="Devamsızlık" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ogrenciBilgiAnchorPane" layoutX="262.0" layoutY="140.0" prefHeight="461.0" prefWidth="657.0" style="-fx-border-color: #263D5D; -fx-background-color: white; -fx-background-radius: 2px;" visible="false">
+         <children>
+            <Label fx:id="sınavTarihListesiLabel1" layoutX="14.0" layoutY="14.0" prefHeight="28.0" prefWidth="631.0" style="-fx-background-color: #4680FF;" text="    Öğrencinin Ders Notları" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TableView fx:id="sınavNotları" layoutX="14.0" layoutY="53.0" prefHeight="382.0" prefWidth="631.0">
+               <columns>
+                  <TableColumn fx:id="dersler" prefWidth="179.0" text="Dersler" />
+                  <TableColumn fx:id="sınav1" prefWidth="60.0" text="Sınav 1" />
+                  <TableColumn fx:id="sınav2" prefWidth="60.0" text="Sınav 2" />
+                  <TableColumn fx:id="sınav3" prefWidth="60.0" text="Sınav 3" />
+                  <TableColumn fx:id="proje1" prefWidth="60.0" text="Proje 1" />
+                  <TableColumn fx:id="proje2" prefWidth="60.0" text="Proje 2" />
+                  <TableColumn fx:id="proje3" prefWidth="60.0" text="Proje 3" />
+                  <TableColumn fx:id="puan" prefWidth="91.0" text="Puan" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="sınavVeProjeTarihleriAnchorPane" layoutX="272.0" layoutY="150.0" prefHeight="461.0" prefWidth="657.0" style="-fx-border-color: #263D5D; -fx-background-color: white; -fx-background-radius: 2px;" visible="false">
+         <children>
+            <Label fx:id="sınavTarihListesiLabel11" layoutX="14.0" layoutY="14.0" prefHeight="28.0" prefWidth="631.0" style="-fx-background-color: #4680FF;" text="    Sınav ve Proje Tarihleri Listesi" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TableView fx:id="sınavProjeTarihTableView" layoutX="14.0" layoutY="53.0" prefHeight="382.0" prefWidth="631.0">
+               <columns>
+                  <TableColumn fx:id="sınavTarihiDers" prefWidth="297.0" text="Ders" />
+                  <TableColumn fx:id="sınavTarihiTur" prefWidth="137.0" text="Tür " />
+                  <TableColumn fx:id="sınavTarihiTarih" prefWidth="196.0" text="Tarih" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="devamsızlıkAnchorPane" layoutX="280.0" layoutY="113.0" prefHeight="461.0" prefWidth="460.0" style="-fx-border-color: #263D5D; -fx-background-color: white; -fx-background-radius: 2px;" visible="false">
+         <children>
+            <Label fx:id="sınavTarihListesiLabel111" layoutX="14.0" layoutY="14.0" prefHeight="28.0" prefWidth="431.0" style="-fx-background-color: #4680FF;" text="    Devamsızlık Bilgisi" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TableView fx:id="devamsızlıkTableView" layoutX="14.0" layoutY="53.0" prefHeight="372.0" prefWidth="431.0">
+               <columns>
+                  <TableColumn fx:id="devamsızlıkGünTableView" prefWidth="93.0" text="Gün" />
+                  <TableColumn fx:id="devamsızlıkAyTableView" prefWidth="212.0" text="Ay" />
+                  <TableColumn fx:id="devamsızlıkYılTableView" prefWidth="125.0" text="Yıl" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

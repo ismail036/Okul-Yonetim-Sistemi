@@ -1,0 +1,19 @@
+.myButton:hover{
+    -fx-background-color: #6ED9E5;
+}
+
+.mybButton2:hover{
+    -fx-background-color: #dc8700;
+}
+
+.mybButton2{
+    -fx-background-color: #FF9D0C;
+}
+
+.myButton{
+    -fx-background-color: white;
+}
+
+.margin{
+    -fx-end-margin: 2px;
+}

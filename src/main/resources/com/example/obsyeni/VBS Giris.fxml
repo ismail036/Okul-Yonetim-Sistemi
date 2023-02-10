@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.obsyeni.VBSGiris">
+   <children>
+      <HBox layoutX="1.0" layoutY="-1.0" prefHeight="400.0" prefWidth="458.0">
+         <children>
+            <SplitPane prefHeight="400.0" prefWidth="178.0" style="-fx-background-color: #343899;">
+               <items>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fill="#fff9f9" layoutX="34.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veli Bilgilendirme Sistemi Giris" textAlignment="CENTER" wrappingWidth="106.51171875">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="54.0" fitWidth="90.0" layoutX="57.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="C:\Users\ismpr\Desktop\Kisisel\OBS Yeni 1\icon\vbsLogin.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+            <VBox prefHeight="400.0" prefWidth="280.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="tc" maxWidth="210.0" prefHeight="47.0" prefWidth="100.0" promptText="Öğrenci TC Kimlik Numarası" style="-fx-border-color: #CED4DA; -fx-background-color: WHİTE;">
+                     <VBox.margin>
+                        <Insets left="35.0" top="130.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="okulNo" maxWidth="210.0" prefHeight="47.0" prefWidth="100.0" promptText="Öğrenci Okul No" style="-fx-border-color: #CED4DA; -fx-background-color: WHİTE;">
+                     <VBox.margin>
+                        <Insets left="35.0" top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button fx:id="giris" mnemonicParsing="false" onAction="#giris" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #343899; -fx-border-radius: 25;" text="Giris" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="35.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
